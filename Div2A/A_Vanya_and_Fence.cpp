@@ -1,18 +1,28 @@
 #include <iostream>
 
-int main()
+class A_Vanya_and_Fence
 {
-    int n, h, count(0);
-    std::cin >> n >> h;
-    int a;
-    while (n > 0)
+public:
+    int main(int n, int h)
     {
-        std::cin >> a;
-        if (a > h)
+        int count(0);
+        std::cin >> n >> h;
+        int a;
+        while (n > 0)
+        {
+            std::cin >> a;
+            if (a > h)
+                count++;
             count++;
-        count++;
-        n--;
-    }
+            n--;
+        }
 
-    std::cout<<count;
+        std::cout << count;
+    }
+};
+
+int main() {
+    int n, h;
+    std::cin >> n >> h;
+
 }
